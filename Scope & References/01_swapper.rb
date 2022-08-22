@@ -3,8 +3,7 @@
 # The method should modify the existing array and not create a new array.
 
 def swapper(arr, idx_1, idx_2)
-    arr[1], arr[0] = arr[0], arr[1]
-    p arr
+    arr[idx_1], arr[idx_2] = arr[idx_2], arr[idx_1]
     return arr
 end
 
