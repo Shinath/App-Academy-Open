@@ -15,6 +15,11 @@ def peak_finder(arr)
             new_arr << arr[i]
         end
     end
+
+    if arr.length > 1 and arr[arr.length - 1] > arr[arr.length - 2]
+            new_arr << arr[arr.length - 1]
+        end
+    
     new_arr
 end
 
