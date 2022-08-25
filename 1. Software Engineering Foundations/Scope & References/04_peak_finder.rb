@@ -5,6 +5,11 @@
 
 def peak_finder(arr)
     new_arr = []
+
+    if arr.length > 1 and arr[0] > arr[1]
+        new_arr << arr[0]
+    end
+
     (1...arr.length - 1).each do |i|
         if arr[i] > arr[i - 1] and arr[i] > arr[i + 1]
             new_arr << arr[i]
