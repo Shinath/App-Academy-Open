@@ -29,8 +29,7 @@ def censor(sent, arr)
     tab.each do |word|
         arr.each do |ar|
             if word.downcase == ar.downcase
-                word.gsub!(/[aeiou]/, '*')
-                word.gsub!(/[AEIOU]/, '*')
+                word.gsub!(/[aeiouAEIOU]/, '*')
             end
         end
     end
